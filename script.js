@@ -1,12 +1,18 @@
-// script.js
-const menuToggle = document.getElementById('menu-toggle');
-const sidebar = document.getElementById('sidebar');
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileNav = document.getElementById("mobile-nav");
+    const navLinks = document.querySelectorAll("#mobile-nav a"); 
+    menuToggle.addEventListener("click", function () {
+        mobileNav.style.display =
+            mobileNav.style.display === "none" || mobileNav.style.display === ""
+                ? "block"
+                : "none";
+    });
 
-menuToggle.addEventListener('click', () => {
-    if (sidebar.style.left === '0px') {
-        sidebar.style.left = '-250px'; // Fecha a sidebar
-    } else {
-        sidebar.style.left = '0px'; // Abre a sidebar
-    }
+    // Fechar o menu ao clicar em um link
+    navLinks.forEach(link => {
+        link.addEventListener("click", function () {
+            mobileNav.style.display = "none";
+        });
+    });
 });
-
