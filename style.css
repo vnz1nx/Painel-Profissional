@@ -182,6 +182,12 @@ a:hover {
 #menu-toggle{
     display: none;
 }
+
+.div{
+    width: 100%;
+    font-size: 70px;
+}
+
 @media (max-width: 768px) {
     #menu-toggle{
         display: inline;
@@ -278,6 +284,11 @@ a:hover {
 
     .sidebar.active ~ .content {
         margin-left: 0;
+    }
+
+    .div{
+        width: 100%;
+        font-size: 27px;
     }
 
 }
