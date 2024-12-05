@@ -184,8 +184,8 @@ a:hover {
 }
 
 .div{
-    width: 80%;
-    font-size: 70px;
+    width: 100%;
+    font-size: 50px;
 }
 
 @media (max-width: 768px) {
