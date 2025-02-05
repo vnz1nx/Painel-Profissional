@@ -8,12 +8,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
+        /* Estilos existentes */
         .intro {
             display: flex;
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background: linear-gradient(135deg, #029ca1, #017373,#1379ff,#180090);
+            background: linear-gradient(135deg, #029ca1, #017373, #1379ff, #180090);
             color: white;
             font-family: Arial, sans-serif;
             text-align: center;
@@ -44,9 +45,7 @@
             }
             100% {
                 width: 87%;
-                
             }
-            
         }
 
         @keyframes blink {
@@ -82,6 +81,60 @@
             max-width: 960px;
             margin: 0 auto;
         }
+
+        /* Estilos atualizados */
+        /* Divisões Estilizadas */
+        .div {
+            margin: 20px 0;
+            border-bottom: 2px solid #029ca1;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            animation: dividerAnimation 0.5s ease-in-out;
+        }
+
+        @keyframes dividerAnimation {
+            0% {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Estilos dos Botões de Filtro */
+        .filter-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .filter-buttons button {
+            background-color: #029ca1;
+            color: white;
+            border: 2px solid #029ca1;
+            border-radius: 12px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .filter-buttons button:hover {
+            background-color: #017373;
+            border-color: #017373;
+            transform: scale(1.1);
+        }
+
+        .filter-buttons button:focus {
+            outline: none;
+            box-shadow: 0 0 5px #029ca1;
+        }
+
     </style>
 </head>
 <body>
@@ -125,12 +178,13 @@
     <main class="content">
         <section id="sobre">
             <div class="container">
-                <h2>Resumo</h2>
-                <p>Meu nome é Marcos Vinícius, sou formado em Técnico em Informática para Internet pelo IF Goiano - Campus Trindade. Estou me desenvolvendo na área de tecnologia e, atualmente, não possuo experiência profissional na área de desenvolvimento. Trabalhei como Jovem Aprendiz pelo CIEE, de fevereiro de 2021 a fevereiro de 2022, período em que adquiri experiência como repositor, desempenhando atividades relacionadas à organização de estoque.</p>
+                <h2>Resumo</h2><br>
+                <p>Técnico em Informática no IF Goiano Campus Trindade, aprimoro continuamente minhas habilidades em CSS, JavaScript e React.js, ferramentas essenciais para desenvolvimento web moderno. Na Malhas Brasil Ltda, contribuí ativamente para a organização e eficiência do estoque, aplicando princípios de tecnologia e inovação para melhorar processos.<br>
+                    <br>Meu objetivo é integrar e colaborar com equipes dinâmicas onde possa impulsionar projetos com minha paixão por tecnologia e minha competência em programação. Almejo oportunidades que desafiem minha capacidade analítica e criativa, sempre com o intuito de gerar impacto positivo através de soluções tecnológicas.</p>
             </div>
         </section>
 
-        <div class="div">--------------------------------------</div>
+        <div class="div"></div>
 
         <section id="habilidades">
             <div class="container">
@@ -141,53 +195,53 @@
                     <li>Next.js</li>
                     <li>Java</li>
                     <li>JavaScript</li>
-                    <li>CSS/HTML</li>
+                    <li>HTML/CSS</li>
                     <li>Banco de Dados (SQL)</li>
                 </ul>
             </div>
         </section>
 
-        <div class="div">--------------------------------------</div>
+        <div class="div"></div>
 
         <section id="projetos">
             <div class="container">
                 <h2>Projetos Recentes</h2>
+                <div class="filter-buttons">
+                    <button onclick="filterProjects('all')">Todos</button>
+                    <button onclick="filterProjects('java')">Java</button>
+                    <button onclick="filterProjects('html/css')">Html/Css</button>
+                    <button onclick="filterProjects('next.js')">Next.JS</button>
+                    <button onclick="filterProjects('react.js')">React.JS</button>
+                    <button onclick="filterProjects('react-native')">React Native</button>
+                </div>
                 <div class="projects">
-                    <div class="project-card">
-                        <a href="https://github.com/vnz1nx/Calculadora"><img src="Imagens/Calculadora2.png" alt="Projeto Calculadora em React Native"></a>
-                        <h3>Repositório - Calculadora</h3>
-                    </div>
-                    <div class="project-card">
-                        <a href="https://vnz1nx.github.io/Frase-Feliz/?"><img src="Imagens/SiteFraseFeliz.png" alt="Projeto Frase Feliz em HTML e CSS"></a>
-                        <h3>Frase Feliz - Site</h3>
-                    </div>
-                    <div class="project-card">
-                        <a href="https://labirinto-mv.vercel.app/" target="_blank" rel="noopener noreferrer"><img src="Imagens/StuartEocaminho.png" alt="Jogo Stuart e o Castelo em Next.js"></a>
-                        <h3>Stuart e o Castelo - Jogo</h3>
-                    </div>
-                    <div class="project-card">
-                        <a href="https://vans-projeto2-ano.vercel.app/"><img src="Imagens/Vans Tela.png" alt="Tela da Vans em Next.js"></a>
-                        <h3>Repositório - Projeto Vans</h3>
-                    </div>
-                    <div class="project-card">
-                        <a href="http://webmp.epizy.com/?i=1"><img src="Imagens/SiteLogins.png" alt="Site de Logins e Cadastramento"></a>
-                        <h3>Site</h3>
-                    </div>
-                    <div class="project-card">
+                    <div class="project-card java">
                         <a href="https://api-railway-production-d261.up.railway.app/api/v2/barber"><img src="Imagens/MinhaAPI.png" alt="Site de Logins e Cadastramento"></a>
                         <h3>API - Java Spring boot</h3>
                     </div>
-                    <div class="project-card">
+                    <div class="project-card react-native">
                         <a href="https://github.com/vnz1nx/ProjetoFinal-BarberApp"><video controls width="200px">
                             <source src="Imagens/Vídeo sem título ‐ Feito com o Clipchamp.mp4" type="video/mp4"></a>
                         </video>
                         <h3>App Barbearia</h3>
                     </div>
+                    <div class="project-card next.js">
+                        <a href="https://labirinto-mv.vercel.app/" target="_blank" rel="noopener noreferrer"><img src="Imagens/StuartEocaminho.png" alt="Jogo Stuart e o Castelo em Next.js"></a>
+                        <h3>Stuart e o Castelo - Jogo</h3>
+                    </div>
+                    <div class="project-card react.js">
+                        <a href="https://vans-projeto2-ano.vercel.app/"><img src="Imagens/Vans Tela.png" alt="Tela da Vans em Next.js"></a>
+                        <h3>Repositório - Projeto Vans</h3>
+                    </div>
+                    <div class="project-card html/css">
+                        <a href="http://webmp.epizy.com/?i=1"><img src="Imagens/SiteLogins.png" alt="Site de Logins e Cadastramento"></a>
+                        <h3>Site</h3>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <div class="div">--------------------------------------</div>
+        <div class="div"></div>
 
         <section id="experiencia">
             <div class="container">
@@ -202,7 +256,7 @@
             </div>
         </section>
 
-        <div class="div">--------------------------------------</div>
+        <div class="div"></div>
 
         <section id="formacao">
             <div class="container">
@@ -224,7 +278,7 @@
             </div>
         </section>
 
-        <div class="div">--------------------------------------</div>
+        <div class="div"></div>
 
         <section id="contato">
             <div class="container">
@@ -246,6 +300,17 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        function filterProjects(tech) {
+            const projects = document.querySelectorAll('.project-card');
+            projects.forEach(project => {
+                if (tech === 'all' || project.classList.contains(tech)) {
+                    project.style.display = 'inline-block';
+                } else {
+                    project.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
 </html>
