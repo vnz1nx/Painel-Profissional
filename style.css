@@ -179,7 +179,7 @@ a:hover {
 .sidebar.active {
     left: 0;
 }
-#menu-toggle{
+.menu-toggle{
     display: none;
 }
 
