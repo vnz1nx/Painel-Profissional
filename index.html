@@ -4,271 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Marcos Vinícius</title>
+    <title>Marcos🕷☸</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Estilos existentes */
-        .intro {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background: linear-gradient(135deg, #029ca1, #017373, #1379ff, #180090);
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            animation: fadeIn 1.5s ease-in-out;
-        }
-
-        .intro h1 {
-            font-size: 3em;
-            font-weight: bold;
-            margin: 0;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-        }
-
-        .intro p {
-            margin-top: 10px;
-            font-size: 1.2em;
-            font-weight: 400;
-            white-space: nowrap;
-            overflow: hidden;
-            border-right: 2px solid white;
-            width: 0;
-            animation: typing 1.5s steps(40, end) forwards, blink 0.6s step-end infinite alternate;
-        }
-
-        @keyframes typing {
-            0% {
-                width: 60%;
-            }
-            100% {
-                width: 87%;
-            }
-        }
-
-        @keyframes blink {
-            from {
-                border-color: white;
-            }
-            to {
-                border-color: rgb(86, 17, 17);
-            }
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-60px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        header, main, footer {
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-        }
-
-        /* Estilos atualizados */
-        /* Divisões Estilizadas */
-        .div {
-            margin: 20px 0;
-            border-bottom: 2px solid #029ca1;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-            animation: dividerAnimation 0.5s ease-in-out;
-        }
-
-        @keyframes dividerAnimation {
-            0% {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Estilos dos Botões de Filtro */
-        .filter-buttons {
-            display: flex;
-            gap: 10px;
-            margin-top: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .filter-buttons button {
-            background-color: #029ca1;
-            color: white;
-            border: 2px solid #029ca1;
-            border-radius: 12px;
-            padding: 10px 20px;
-            font-size: 1em;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-weight: bold;
-        }
-
-        .filter-buttons button:hover {
-            background-color: #017373;
-            border-color: #017373;
-            transform: scale(1.1);
-        }
-
-        .filter-buttons button:focus {
-            outline: none;
-            box-shadow: 0 0 5px #029ca1;
-        }
-        @media (max-width: 768px) {
-    .intro h1 {
-        font-size: 2em;
-    }
-
-    .intro p {
-        font-size: 1em;
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .container {
-        width: 90%;
-        padding: 10px;
-        box-sizing: border-box; /* Garante que o padding seja considerado no tamanho total */
-    }
-
-    .filter-buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .project-card {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .project-card img {
-        width: 100%;
-        height: auto;
-    }
-
-    /* Ajuste específico para o vídeo */
-    .project-card video {
-        width: 50%;
-        max-width: 300px; /* Limita a largura máxima do vídeo */
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        padding: 15px; /* Adiciona um pouco de espaço interno ao redor do vídeo */
-    }
-
-    .profile-photo {
-        width: 80%;
-        height: auto;
-        margin: 20px auto;
-        display: block;
-    }
-
-    .social-links a {
-        margin: 10px;
-        font-size: 1.5em;
-    }
-}
-
-
-        @media (max-width: 480px) {
-            .intro h1 {
-                font-size: 1.8em;
-            }
-
-            .intro p {
-                font-size: 0.9em;
-                width: 100%;
-            }
-
-            .projects {
-                display: grid;
-                grid-template-columns: 1fr;
-            }
-
-            .filter-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .filter-buttons button {
-                width: 100%;
-                margin-bottom: 10px;
-            }
-
-            .container {
-                padding: 0 10px;
-            }
-
-            .sidebar-content img {
-                width: 60%;
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="intro">
         <div>
             <h1>Marcos Vinícius</h1>
-            <p>Tecnico em Informática para Internet</p>
+            <p>Desenvolvedor Full Stack</p>
         </div>
     </div>
-
-    <header class="mobile-menu">
-        <button id="menu-toggle" aria-label="Abrir menu">
-            <i class="fas fa-bars"></i>
-        </button>
-        <nav class="mobile-nav" id="mobile-nav">
-            <aside class="sidebar">
-                <div class="sidebar-content">
-                    <img src="Imagens/Perfil.jpeg" alt="Foto de perfil de VNZ1nxz" class="profile-photo">
-        
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/marcos-vinicius-306151275/" class="social-icon" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/VNZ1nx" class="social-icon" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://www.instagram.com/marcosxh_" class="social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <aside class="sidebar">
+        <header class="mobile-menu">
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="mobile-nav" id="mobile-nav">
+                
+                    <div class="sidebar-content">
+                        <img src="Imagens/Perfil.jpeg" alt="Foto de perfil de VNZ1nxz" class="profile-photo">
+            
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/marcos-vinicius-306151275/" class="social-icon" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/VNZ1nx" class="social-icon" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.instagram.com/marcosxh_" class="social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
                     </div>
-                </div>
-        
-                <nav class="sidebar-nav">
-                    <ul>
-                        <li><a href="#sobre">Resumo</a></li>
-                        <li><a href="#habilidades">Minhas Habilidades</a></li>
-                        <li><a href="#projetos">Projetos Recentes</a></li>
-                        <li><a href="#experiencia">Experiência Profissional</a></li>
-                        <li><a href="#formacao">Formação Acadêmica</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                    </ul>
-                </nav>
-            </aside>
-        </nav>
-    </header>
+            
+                    <nav class="sidebar-nav">
+                        <ul>
+                            <li><a href="#sobre">Resumo</a></li>
+                            <li><a href="#habilidades">Minhas Habilidades</a></li>
+                            <li><a href="#projetos">Projetos Recentes</a></li>
+                            <li><a href="#experiencia">Experiência Profissional</a></li>
+                            <li><a href="#formacao">Formação Acadêmica</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </nav>
+            </nav>
+        </header>
+    </aside> 
 
     <main class="content">
         <section id="sobre">
-            <div class="container">
-                <h2>Resumo</h2><br>
+            <h2>Resumo</h2><br>
+            <div class="containerP">
                 <p>Técnico em Informática no IF Goiano Campus Trindade, aprimoro continuamente minhas habilidades em CSS, JavaScript e React.js, ferramentas essenciais para desenvolvimento web moderno. Na Malhas Brasil Ltda, contribuí ativamente para a organização e eficiência do estoque, aplicando princípios de tecnologia e inovação para melhorar processos.<br>
                     <br>Meu objetivo é integrar e colaborar com equipes dinâmicas onde possa impulsionar projetos com minha paixão por tecnologia e minha competência em programação. Almejo oportunidades que desafiem minha capacidade analítica e criativa, sempre com o intuito de gerar impacto positivo através de soluções tecnológicas.</p>
             </div>
@@ -279,15 +60,13 @@
         <section id="habilidades">
             <div class="container">
                 <h2>Minhas Habilidades</h2>
-                <ul>
-                    <li>React.js</li>
-                    <li>React Native</li>
-                    <li>Next.js</li>
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>HTML/CSS</li>
-                    <li>Banco de Dados (SQL)</li>
-                </ul>
+                <img src="https://logospng.org/download/java/logo-java-4096.png">
+                <img src="https://logospng.org/download/html-5/logo-html-5-256.png">
+                <img src="https://logospng.org/download/css-3/logo-css-3-256.png">
+                <img src="https://logospng.org/download/javascript/logo-javascript-256.png" >
+                <img src="https://logospng.org/download/react/logo-react-256.png">
+                <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg">
+                <img src="https://logospng.org/download/postgresql/postgresql-512.png">
             </div>
         </section>
 
@@ -357,7 +136,7 @@
                 <h2>Formação Acadêmica</h2>
                 <ul>
                     <li>
-                        <strong>Técnico em Informática para Internet</strong> <br>
+                        <strong>Técnico em Informática para Internet</strong><br>
                         IF Goiano - Campus Trindade, 2022 a 2024.<br>
                         Possuo conhecimentos em:
                         Java, JavaScript, HTML5, CSS,React Native,React.js,Next.js.
@@ -378,12 +157,11 @@
             <div class="container">
                 <h2>Contato</h2>
                 <p>Entre em contato comigo através do meu e-mail ou redes sociais:</p>
-                <ul>
-                    <li>Email: marcosvgp14@gmail.com</li>
-                    <li><a href="https://www.linkedin.com/in/marcos-vinicius-306151275/">LinkedIn</a></li>
-                    <li><a href="https://github.com/VNZ1nx">GitHub</a></li>
-                    <li><a href="https://www.instagram.com/marcosxh_">Instagram</a></li>
-                </ul>
+                <div class="logos">
+                    <a href="https://www.linkedin.com/in/marcos-vinicius-306151275/""><img src="https://logospng.org/download/linkedin/logo-linkedin-icon-4096.png" width="40px"></a>
+                    <a href="https://github.com/VNZ1nx"><img src="https://toppng.com/uploads/preview/github-logo-png-photo-11659780047rlwsegmg72.png" width="50px"></a>
+                    <a href="https://www.instagram.com/marcosxh_"><img src="https://clipground.com/images/facebook-instagram-logo-clipart-5.jpg" width="40px"></a>
+                </div>
             </div>
         </section>
     </main>
@@ -394,17 +172,6 @@
         </div>
     </footer>
 
-    <script>
-        function filterProjects(tech) {
-            const projects = document.querySelectorAll('.project-card');
-            projects.forEach(project => {
-                if (tech === 'all' || project.classList.contains(tech)) {
-                    project.style.display = 'inline-block';
-                } else {
-                    project.style.display = 'none';
-                }
-            });
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

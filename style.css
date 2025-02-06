@@ -33,7 +33,7 @@ body {
 
 /* Efeitos de hover na barra lateral */
 .sidebar:hover {
-    background-color: #34495e;
+    background-color: #253742;
 }
 
 .sidebar .profile-photo {
@@ -188,11 +188,146 @@ a:hover {
     font-size: 50px;
 }
 
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #029ca1, #017373, #1379ff, #180090);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.intro h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.intro p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    width: 0;
+    animation: typing 1.5s steps(40, end) forwards, blink 0.6s step-end infinite alternate;
+}
+
+@keyframes typing {
+    0% {
+        width: 40%;
+        transition: transform 3.9ms ease-in-out;
+    }
+    100% {
+        width: 62%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: white;
+    }
+    to {
+        border-color: rgb(86, 17, 17);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header, main, footer {
+    padding: 20px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.container > img {
+    width: 50px;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container > img:hover {
+    transform: scale(1.5);
+}
+.div {
+    margin: 20px 0;
+    border-bottom: 2px solid #029ca1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: dividerAnimation 0.5s ease-in-out;
+}
+
+@keyframes dividerAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-buttons button {
+    background-color: #029ca1;
+    color: white;
+    border: 2px solid #029ca1;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.filter-buttons button:hover {
+    background-color: #017373;
+    border-color: #017373;
+    transform: scale(1.1);
+}
+
+.filter-buttons button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #029ca1;
+}
+
 @media (max-width: 768px) {
-    #menu-toggle{
+    .menu-toggle{
         display: inline;
     }
-    #menu-toggle {
+    .menu-toggle {
         position: fixed;
         top: 10px;
         right: 10px;
@@ -206,44 +341,31 @@ a:hover {
         cursor: pointer;
         transition: background-color 0.3s ease;
     }
-    
-    #menu-toggle:hover {
-        background-color:transparent;
+
+    /* Efeito de hover no botão */
+    .menu-toggle:hover {
+        background-color: transparent;
     }
-    
-    .content {
-        margin-left: 0;
-        transition: margin-left 0.3s ease;
-    }
-    .content {
-        margin-left: 0;
-        transition: margin-left 0.3s ease;
-    }
-    
-    .sidebar.active ~ .content {
-        margin-left: 280px;
-        transition: all 0.3s ease;
-    }
+
     .sidebar {
-        position: fixed; 
+        position: fixed;
         top: 0;
-        left: 0px;
+        left: -70%;
         height: 100%;
-        width:100px;
+        width: 50%;
         background-color: #2c3e50;
         color: #000000;
-        padding: 20px;
-        text-align: center;
         box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
+        transition: all 0.5s ease;
         z-index: 1000;
     }
 
-    .sidebar .profile-photo {
-        width: 200px;
-        height: 200px;
+    .sidebar.collapsed {
+        left: 0;
+        height: 100%;
+        width: 70%;
+        transition: all 0.5s ease;
     }
-
     .content {
         margin-left: 0px;
         width: 100%;
@@ -257,9 +379,6 @@ a:hover {
 
     .project-card {
         width: 100%;
-    }
-    .mobile-nav {
-        display: none;
     }
     .mobile-menu{
         position: fixed;
@@ -278,17 +397,108 @@ a:hover {
         height: 50%;
     }
 
-    .sidebar {
-        width: 100vw;
-    }
-
-    .sidebar.active ~ .content {
+    .content {
         margin-left: 0;
+        transition: margin-left 0.3s ease;
     }
-
+    .content {
+        margin-left: 0;
+        transition: margin-left 0.3s ease;
+    }
     .div{
         width: 100%;
         font-size: 27px;
     }
+    .intro h1 {
+        font-size: 2em;
+    }
+        
+    .intro p {
+        font-size: 1em;
+        width: 90%;
+        margin: 0 auto;
+    }
+        
+    @keyframes typing {
+        0% {
+            width: 40%;
+                
+        }
+        100% {
+            width: 78%;
+            transition: transform 0.9ms ease-in-out;
+        }
+    }
+        
+        
+    h2{
+        text-align: center;
+        justify-content: center;
+    }   
+    .containerP {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        text-align: justify;
+        margin: auto;
+        font-size: 18px;  
+        color: #333; 
+        font-family: Arial, sans-serif;
+        }
+        
+        .container {
+        width: 90%;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        }
+        
+        .container > img {
+        width:120px;
+        height:110px;
+        margin: 20px;
+        }
+        
+        .filter-buttons {
+        flex-direction: column;
+        gap: 10px;
+        }
+        
+        .project-card {
+        width: 100%;
+        margin: 10px 0;
+        }
+        
+        .project-card img {
+        width: 100%;
+        height: auto;
+        }
+        
+        .project-card video {
+        width: 50%;
+        max-width: 300px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        padding: 15px;
+        }
+        
+        .profile-photo {
+        width: 80%;
+        height: auto;
+        margin: 20px auto;
+        display: block;
+        }
+        
+        .social-links a {
+        margin: 10px;
+        font-size: 1.5em;
+        }
+        .logos{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        }
 
 }
