@@ -1,197 +1,288 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Marcos🕷☸</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Marcos🕷☸</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="intro">
-        <div>
-            <h1>Marcos Vinícius</h1>
-            <p>Desenvolvedor Full Stack</p>
-        </div>
+  <div class="intro">
+    <div>
+      <h1>Marcos Vinícius</h1>
+      <p>Desenvolvedor Full Stack</p>
     </div>
-    <aside class="sidebar">
-        <header class="mobile-menu">
-            <button class="menu-toggle" aria-label="Abrir menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav class="mobile-nav" id="mobile-nav">
-                
-                    <div class="sidebar-content">
-                        <img src="Imagens/Perfil.jpeg" alt="Foto de perfil de VNZ1nxz" class="profile-photo">
+  </div>
+  <aside class="sidebar">
+    <header class="mobile-menu">
+        <button class="menu-toggle" aria-label="Abrir menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="mobile-nav" id="mobile-nav">
             
-                        <div class="social-links">
-                            <a href="https://www.linkedin.com/in/marcos-vinicius-306151275/" class="social-icon" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://github.com/VNZ1nx" class="social-icon" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="https://www.instagram.com/marcosxh_" class="social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-            
-                    <nav class="sidebar-nav">
-                        <ul>
-                            <li><a href="#sobre">Resumo</a></li>
-                            <li><a href="#habilidades">Minhas Habilidades</a></li>
-                            <li><a href="#projetos">Projetos Recentes</a></li>
-                            <li><a href="#experiencia">Experiência Profissional</a></li>
-                            <li><a href="#formacao">Formação Acadêmica</a></li>
-                            <li><a href="#contato">Contato</a></li>
-                        </ul>
-                    </nav>
-            </nav>
-        </header>
-    </aside> 
-
-    <main class="content">
-        <section id="sobre">
-            <h2>Resumo</h2><br>
-            <div class="containerP">
-                <p>Técnico em Informática no IF Goiano Campus Trindade, aprimoro continuamente minhas habilidades em CSS, JavaScript e React.js, ferramentas essenciais para desenvolvimento web moderno. Na Malhas Brasil Ltda, contribuí ativamente para a organização e eficiência do estoque, aplicando princípios de tecnologia e inovação para melhorar processos.<br>
-                    <br>Meu objetivo é integrar e colaborar com equipes dinâmicas onde possa impulsionar projetos com minha paixão por tecnologia e minha competência em programação. Almejo oportunidades que desafiem minha capacidade analítica e criativa, sempre com o intuito de gerar impacto positivo através de soluções tecnológicas.</p>
-            </div>
-        </section>
-
-        <div class="div"></div>
-
-        <section id="habilidades">
-            <div class="container">
-                <h2>Minhas Habilidades</h2>
-                <img src="https://logospng.org/download/java/logo-java-4096.png">
-                <img src="https://logospng.org/download/html-5/logo-html-5-256.png">
-                <img src="https://logospng.org/download/css-3/logo-css-3-256.png">
-                <img src="https://logospng.org/download/javascript/logo-javascript-256.png" >
-                <img src="https://logospng.org/download/react/logo-react-256.png">
-                <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg">
-                <img src="https://logospng.org/download/postgresql/postgresql-512.png">
-            </div>
-        </section>
-
-        <div class="div"></div>
-
-        <section id="projetos">
-            <div class="container">
-                <h2>Projetos Recentes</h2>
-                <div class="filter-buttons">
-                    <button onclick="filterProjects('all')">Todos</button>
-                    <button onclick="filterProjects('java')">Java</button>
-                    <button onclick="filterProjects('html/css')">Html/Css</button>
-                    <button onclick="filterProjects('next.js')">Next.JS</button>
-                    <button onclick="filterProjects('react.js')">React.JS</button>
-                    <button onclick="filterProjects('react-native')">React Native</button>
-                </div>
-                <div class="projects">
-                    <div class="project-card java">
-                        <a href="https://github.com/vnz1nx/API-Railway"><img src="Imagens/MinhaAPI.png" alt="Site de Logins e Cadastramento"></a>
-                        <h3>API | Java Spring boot</h3>
-                    </div>
-                    <div class="project-card react-native">
-                        <a href="https://github.com/vnz1nx/ProjetoFinal-BarberApp"><video controls width="200px">
-                            <source src="Imagens/Vídeo sem título ‐ Feito com o Clipchamp.mp4" type="video/mp4"></a>
-                        </video>
-                        <h3>App Barbearia | React Native</h3>
-                    </div>
-                    <div class="project-card next.js">
-                        <a href="https://labirinto-mv.vercel.app/" target="_blank" rel="noopener noreferrer"><img src="Imagens/StuartEocaminho.png" alt="Jogo Stuart e o Castelo em Next.js"></a>
-                        <h3>Stuart e o Castelo - Jogo | Next.js</h3>
-                    </div>
-                    <div class="project-card react.js">
-                        <a href="https://vans-projeto2-ano.vercel.app/"><img src="Imagens/Vans Tela.png" alt="Tela da Vans em Next.js"></a>
-                        <h3>Projeto Vans | React.js</h3>
-                    </div>
-                    <div class="project-card html/css">
-                        <a href="http://webmp.epizy.com/?i=1"><img src="Imagens/SiteLogins.png" alt="Site de Logins e Cadastramento"></a>
-                        <h3>Site | Html e Css</h3>
-                    </div>
-                    <div class="project-card java">
-                        <a href="https://github.com/vnz1nx/CadastraDeputado"><img src="Imagens/PorjetoDeputado.jpeg" alt="Programa capaz de cadastrar Estado e Deputado referente ao estado."></a>
-                        <h3>Cadastramento de Estado Deputado | Java POO</h3>
-                    </div>
-                    <div class="project-card react-native">
-                        <a href="https://github.com/vnz1nx/ProjetoPatinhoWeb"><img src="Imagens/sucessoWeb.PNG" alt="Jogo baseado em encontrar o objetivo azul tendo como sucesso um pato dançando!"></a>
-                        <h3>Labirinto Patinho | React Native</h3>
-                    </div>
-                    <div class="project-card java">
-                        <a href="https://github.com/vnz1nx/PageUsuario"><img src="Imagens/Tela2.PNG" alt="Cadastro e registro de usuario em banco de dados!"></a>
-                        <h3>Registro de Usuarios | Java - SpringBoot</h3>
-                    </div>
-                    <div class="project-card html/css">
-                        <a href="https://github.com/vnz1nx/Frase-Feliz"><img src="Imagens/SiteFraseFeliz.png" alt="Site para descontrair,coloque seu nome e receba um elogío!"></a>
-                        <h3>Frase Feliz | Html e CSS</h3>
-                    </div>
-                    <div class="project-card react-native">
-                        <a href="https://github.com/vnz1nx/Calculadora"><img src="Imagens/Calculadora2.png" alt="Aplicativo calculadora"></a>
-                        <h3>Calculadora | React Native</h3>
-                    </div>
-                     <div class="project-card java">
-                        <a href="https://github.com/vnz1nx/BarbeariaJava"><img src="Imagens/BarbeariaJAva.PNG" alt="Programa pra barbearia em desenvolvimento"></a>
-                        <h3>AppBarbearia | Java POO</h3>
+                <div class="sidebar-content">
+                    <img src="Imagens/Perfil.jpeg" alt="Foto de perfil de VNZ1nxz" class="profile-photo">
+        
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/marcos-vinicius-306151275/" class="social-icon" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/VNZ1nx" class="social-icon" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/marcosxh_" class="social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-            </div>
-        </section>
+        
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li><a href="#sobre">Resumo</a></li>
+                        <li><a href="#habilidades">Minhas Habilidades</a></li>
+                        <li><a href="#projetos">Projetos Recentes</a></li>
+                        <li><a href="#experiencia">Experiência Profissional</a></li>
+                        <li><a href="#formacao">Formação Acadêmica</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+        </nav>
+    </header>
+</aside>
+  <main class="content">
+    <section id="sobre">
+      <h2>Resumo</h2><br>
+      <div class="containerP">
+        <p>
+          Técnico em Informática no IF Goiano Campus Trindade, aprimoro continuamente minhas habilidades em CSS, JavaScript e React.js, ferramentas essenciais para desenvolvimento web moderno. Na Malhas Brasil Ltda, contribuí ativamente para a organização e eficiência do estoque, aplicando princípios de tecnologia e inovação para melhorar processos.
+          <br><br>
+          Meu objetivo é integrar e colaborar com equipes dinâmicas onde possa impulsionar projetos com minha paixão por tecnologia e minha competência em programação. Almejo oportunidades que desafiem minha capacidade analítica e criativa, sempre com o intuito de gerar impacto positivo através de soluções tecnológicas.
+        </p>
+      </div>
+    </section>
 
-        <div class="div"></div>
+    <div class="div"></div>
 
-        <section id="experiencia">
-            <div class="container">
-                <h2>Experiência Profissional</h2>
-                <ul>
-                    <li>
-                        <strong>Jovem Aprendiz - Repositor</strong> <br>
-                        CIEE - 02/2021 a 02/2022 <br>
-                        <p>Atuação no setor de reposição.</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
+    <section id="habilidades">
+      <div class="container">
+        <h2>Minhas Habilidades</h2>
+        <img src="https://logospng.org/download/java/logo-java-4096.png">
+        <img src="https://logospng.org/download/html-5/logo-html-5-256.png">
+        <img src="https://logospng.org/download/css-3/logo-css-3-256.png">
+        <img src="https://logospng.org/download/javascript/logo-javascript-256.png">
+        <img src="https://logospng.org/download/react/logo-react-256.png">
+        <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg">
+        <img src="https://logospng.org/download/postgresql/postgresql-512.png">
+      </div>
+    </section>
 
-        <div class="div"></div>
+    <div class="div"></div>
 
-        <section id="formacao">
-            <div class="container">
-                <h2>Formação Acadêmica</h2>
-                <ul>
-                    <li>
-                        <strong>Técnico em Informática para Internet</strong><br>
-                        IF Goiano - Campus Trindade, 2022 a 2024.<br>
-                        Possuo conhecimentos em:
-                        Java, JavaScript, HTML5, CSS,React Native,React.js,Next.js.
-                    </li>
-                    <li>
-                        <strong>Informática Basica</strong> <br>
-                        Microllins, 2019 a 2021.<br>
-                        Possuo conhecimentos em:
-                        Word, Excel, PowerPoint ,OneDriver, Informática, internet.
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <div class="div"></div>
-
-        <section id="contato">
-            <div class="container">
-                <h2>Contato</h2>
-                <p>Entre em contato comigo através do meu e-mail ou redes sociais:</p>
-                <div class="logos">
-                    <a href="https://www.linkedin.com/in/marcos-vinicius-306151275/""><img src="https://logospng.org/download/linkedin/logo-linkedin-icon-4096.png" width="40px"></a>
-                    <a href="https://github.com/VNZ1nx"><img src="https://toppng.com/uploads/preview/github-logo-png-photo-11659780047rlwsegmg72.png" width="50px"></a>
-                    <a href="https://www.instagram.com/marcosxh_"><img src="https://clipground.com/images/facebook-instagram-logo-clipart-5.jpg" width="40px"></a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 VNZ1nxz. Todos os direitos reservados.</p>
+    <section id="projetos">
+      <div class="container">
+        <h2>Projetos Recentes</h2>
+        <div class="filter-buttons">
+          <button onclick="filterProjects('all')">Todos</button>
+          <button onclick="filterProjects('java')">Java</button>
+          <button onclick="filterProjects('html/css')">Html/Css</button>
+          <button onclick="filterProjects('next.js')">Next.JS</button>
+          <button onclick="filterProjects('react.js')">React.JS</button>
+          <button onclick="filterProjects('react-native')">React Native</button>
         </div>
-    </footer>
+        <div class="projects">
+          <div class="project-card java" onclick="virar(this)">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="Imagens/MinhaAPI.png" alt="Site de Logins e Cadastramento">
+                  <h3>API | Java Spring boot</h3>
+                </div>
+                <div class="back">
+                  <p>API desenvolvida em Java com Spring Boot para gerenciamento de usuários.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card react-native" onclick="virar(this)">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <video controls width="200px">
+                    <source src="Imagens/Vídeo sem título ‐ Feito com o Clipchamp.mp4" type="video/mp4">
+                  </video>
+                  <h3>App Barbearia | React Native</h3>
+                </div>
+                <div class="back">
+                  <p>Aplicativo para gerenciamento de agendamentos em barbearias.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card next.js" onclick="virar(this)">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="Imagens/StuartEocaminho.png" alt="Jogo Stuart e o Castelo em Next.js">
+                  <h3>Stuart e o Castelo - Jogo | Next.js</h3>
+                </div>
+                <div class="back">
+                  <p>Jogo interativo desenvolvido em Next.js.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card react.js" onclick="virar(this)">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="Imagens/Vans Tela.png" alt="Tela da Vans em Next.js">
+                  <h3>Projeto Vans | React.js</h3>
+                </div>
+                <div class="back">
+                  <p>Projeto desenvolvido com React.js para apresentação da marca Vans.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card html/css" onclick="virar(this)">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="Imagens/SiteLogins.png" alt="Site de Logins e Cadastramento">
+                  <h3>Site | Html e Css</h3>
+                </div>
+                <div class="back">
+                  <p>Site desenvolvido com HTML e CSS com foco em design responsivo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card java" onclick="virar(this)">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="Imagens/PorjetoDeputado.jpeg" alt="Cadastro de Estado e Deputado">
+                  <h3>Cadastramento de Estado Deputado | Java POO</h3>
+                </div>
+                <div class="back">
+                  <p>Sistema para cadastro e gerenciamento de estados e deputados utilizando Java POO.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card react-native" onclick="virar(this)">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="Imagens/sucessoWeb.PNG" alt="Labirinto Patinho">
+                  <h3>Labirinto Patinho | React Native</h3>
+                </div>
+                <div class="back">
+                  <p>Jogo desenvolvido em React Native inspirado no clássico labirinto.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card java" onclick="virar(this)">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="Imagens/Tela2.PNG" alt="Cadastro de Usuários">
+                  <h3>Registro de Usuarios | Java - SpringBoot</h3>
+                </div>
+                <div class="back">
+                  <p>Aplicação para cadastro e registro de usuários utilizando Java com SpringBoot.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card html/css" onclick="virar(this)">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="Imagens/SiteFraseFeliz.png" alt="Site Frase Feliz">
+                  <h3>Frase Feliz | Html e CSS</h3>
+                </div>
+                <div class="back">
+                  <p>Site interativo que gera elogios a partir do nome do usuário.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card react-native" onclick="virar(this)">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="Imagens/Calculadora2.png" alt="Aplicativo Calculadora">
+                  <h3>Calculadora | React Native</h3>
+                </div>
+                <div class="back">
+                  <p>Aplicativo de calculadora desenvolvido em React Native.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <div class="div"></div>
+
+    <section id="experiencia">
+      <div class="container">
+        <h2>Experiência Profissional</h2>
+        <ul>
+          <li>
+            <strong>Jovem Aprendiz - Repositor</strong> <br>
+            CIEE - 02/2021 a 02/2022 <br>
+            <p>Atuação no setor de reposição.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="div"></div>
+
+    <section id="formacao">
+      <div class="container">
+        <h2>Formação Acadêmica</h2>
+        <ul>
+          <li>
+            <strong>Técnico em Informática para Internet</strong><br>
+            IF Goiano - Campus Trindade, 2022 a 2024.<br>
+            Possuo conhecimentos em: Java, JavaScript, HTML5, CSS, React Native, React.js, Next.js.
+          </li>
+          <li>
+            <strong>Informática Basica</strong> <br>
+            Microllins, 2019 a 2021.<br>
+            Possuo conhecimentos em: Word, Excel, PowerPoint, OneDriver, Informática, internet.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="div"></div>
+
+    <section id="contato">
+      <div class="container">
+        <h2>Contato</h2>
+        <p>Entre em contato comigo através do meu e-mail ou redes sociais:</p>
+        <div class="logos">
+          <a href="https://www.linkedin.com/in/marcos-vinicius-306151275/">
+            <img src="https://logospng.org/download/linkedin/logo-linkedin-icon-4096.png" width="40px">
+          </a>
+          <a href="https://github.com/VNZ1nx">
+            <img src="https://toppng.com/uploads/preview/github-logo-png-photo-11659780047rlwsegmg72.png" width="50px">
+          </a>
+          <a href="https://www.instagram.com/marcosxh_">
+            <img src="https://clipground.com/images/facebook-instagram-logo-clipart-5.jpg" width="40px">
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 VNZ1nxz. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

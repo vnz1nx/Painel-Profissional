@@ -143,6 +143,12 @@ body {
     margin-bottom: 15px;
 }
 
+.project-card video {
+    width: 60%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
 /* Seções */
 section {
     margin-bottom: 40px;
@@ -263,7 +269,7 @@ header, main, footer {
 }
 
 .container > img {
-    width: 50px;
+    width: 80px;
     margin: 20px;
     transition: transform 0.3s ease-in-out;
 }
@@ -323,6 +329,54 @@ header, main, footer {
     box-shadow: 0 0 5px #029ca1;
 }
 
+.project-card {
+    width: 200px;
+    height: 250px;
+    perspective: 1000px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .flip-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .flipper {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .project-card.flipped .flipper {
+    transform: rotateY(180deg);
+  }
+  
+  .front, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .back {
+    transform: rotateY(180deg);
+    background: #f8f8f8;
+  }
+
 @media (max-width: 768px) {
     .menu-toggle{
         display: inline;
@@ -369,12 +423,13 @@ header, main, footer {
     .content {
         margin-left: 0px;
         width: 100%;
-        padding: 10px;
     }
 
     .projects {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        align-self: center;
+        justify-content: center;
     }
 
     .project-card {
@@ -448,16 +503,16 @@ header, main, footer {
         }
         
         .container {
-        width: 90%;
-        padding: 10px;
+        width: 100%;
         box-sizing: border-box;
         text-align: center;
+        justify-content: center;
         }
         
         .container > img {
-        width:120px;
-        height:110px;
-        margin: 20px;
+            width:120px;
+            height:110px;
+            margin: 20px;
         }
         
         .filter-buttons {
@@ -467,25 +522,25 @@ header, main, footer {
         
         .project-card {
         width: 100%;
-        margin: 10px 0;
+        height: 40vh;
+        margin-top: 30px;
+        align-items: center;
+        justify-content: center;
+        background-color: #f8f8f82c;
         }
         
         .project-card img {
-        width: 100%;
+        width: 200px;
         height: auto;
         }
         
         .project-card video {
-        width: 50%;
-        max-width: 300px;
+        width: 80px;
         height: auto;
-        display: block;
-        margin: 0 auto;
-        padding: 15px;
         }
         
         .profile-photo {
-        width: 80%;
+        width: 10%;
         height: auto;
         margin: 20px auto;
         display: block;
@@ -501,4 +556,43 @@ header, main, footer {
         justify-content: center;
         }
 
+        .flip-container {
+            width: 100%;
+            
+          }
+          
+          .flipper {
+            width: 100%;
+            height: 100%;
+
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+          }
+          
+          .project-card.flipped .flipper {
+            transform: rotateY(180deg);
+          }
+          
+          .front, .back {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background: white;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+          }
+          
+          .back {
+            transform: rotateY(180deg);
+            background: #1f1b1b;
+            color: white;
+          }
 }
