@@ -219,29 +219,30 @@ a:hover {
     font-weight: 400;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 2px solid white;
+    border-right: 2.0px solid white; /* Cursor */
     width: 0;
-    animation: typing 1.5s steps(40, end) forwards, blink 0.6s step-end infinite alternate;
+    line-height: 1;
+    vertical-align: middle;
+    
+    /* Animação de digitação e piscar */
+    animation: typing 1.5s linear forwards, blink 0.5s ease-in-out infinite;
 }
 
 @keyframes typing {
-    0% {
-        width: 40%;
-        transition: transform 3.9ms ease-in-out;
+    from {
+        width: 0;
     }
-    100% {
-        width: 62%;
+    to {
+        width: 70%; /* Ajuste conforme necessário */
     }
 }
 
 @keyframes blink {
-    from {
-        border-color: white;
-    }
-    to {
-        border-color: rgb(86, 17, 17);
+    50% {
+        border-color: transparent;
     }
 }
+
 
 @keyframes fadeIn {
     from {
@@ -469,21 +470,35 @@ header, main, footer {
     }
         
     .intro p {
-        font-size: 1em;
-        width: 90%;
-        margin: 0 auto;
-    }
+        margin-top: 10px;
+        font-size: 1.2em;
+        font-weight: 400;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid white; /* Cursor */
+        width: 0;
+        line-height: 1;
+        vertical-align: middle;
         
+        /* Animação de digitação e piscar */
+        animation: typing 2.5s linear forwards, blink 0.5s ease-in-out infinite;
+    }
+    
     @keyframes typing {
-        0% {
-            width: 40%;
-                
+        from {
+            width: 0;
         }
-        100% {
-            width: 78%;
-            transition: transform 0.9ms ease-in-out;
+        to {
+            width: 102%; /* Ajuste conforme necessário */
         }
     }
+    
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }
+    
         
         
     h2{
