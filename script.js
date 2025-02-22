@@ -10,34 +10,26 @@ navLinks.addEventListener("click", () => {
         sidebar.classList.remove("collapsed");
     });
 
-function filterProjects(tech) {
-    const projects = document.querySelectorAll('.project-card');
-    projects.forEach(project => {
-        if (tech === 'all' || project.classList.contains(tech)) {
-            project.style.display = 'inline-block';
-        } else {
-            project.style.display = 'none';
-        }
-    });
-}
 
-function virar(element) {
-    element.classList.toggle("flipped");
-  }
 
   function filterProjects(category) {
-    const projects = document.querySelectorAll('.project-card');
+    const projects = document.querySelectorAll('.project-item');
     projects.forEach(project => {
-      if (category === 'all') {
+      if (category === 'all' || project.classList.contains(category)) {
         project.style.display = 'inline-block';
       } else {
-        if (project.classList.contains(category)) {
-          project.style.display = 'inline-block';
-        } else {
           project.style.display = 'none';
         }
-      }
-    });
+      });
   }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const timelineItems = document.querySelectorAll(".timeline-item");
+  
+    timelineItems.forEach((item, index) => {
+      item.style.animationDelay = `${index * 0.2}s`;
+    });
+  });
+  
 
   
